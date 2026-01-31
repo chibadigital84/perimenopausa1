@@ -48,7 +48,7 @@ export const HeroSection = () => {
         duration: 0.8,
         delay: 0.6
       }} className="font-body text-lg md:text-xl text-muted-foreground text-center max-w-2xl mb-10">
-          Existe um motivo lógico para isso — e um caminho simples para voltar ao centro, sem precisar "dar um jeito".
+          Existe um motivo lógico para isso — e um caminho simples para voltar ao centro, sem precisar virar outra pessoa.
         </motion.p>
         
         {/* Hero image */}
@@ -68,17 +68,20 @@ export const HeroSection = () => {
         </motion.div>
         
         {/* CTA Button */}
-        <motion.a 
-          href="https://pay.kiwify.com.br/60PbV9F"
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ opacity: 0, y: 20 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          transition={{ duration: 0.8, delay: 1 }} 
-          whileHover={{ scale: 1.05 }} 
-          whileTap={{ scale: 0.98 }} 
-          className="btn-cta cursor-pointer"
-        >
+        <motion.a href="https://pay.kiwify.com.br/60PbV9F" target="_blank" rel="noopener noreferrer" initial={{
+        opacity: 0,
+        y: 20
+      }} animate={{
+        opacity: 1,
+        y: 0
+      }} transition={{
+        duration: 0.8,
+        delay: 1
+      }} whileHover={{
+        scale: 1.05
+      }} whileTap={{
+        scale: 0.98
+      }} className="btn-cta cursor-pointer">
           🌸 Comece sua travessia agora
         </motion.a>
       </div>
