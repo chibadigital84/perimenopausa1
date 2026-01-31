@@ -140,6 +140,26 @@ export const ModulesSection = () => {
             </motion.div>
           ))}
         </div>
+        
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mt-12"
+        >
+          <motion.a
+            href="https://pay.kiwify.com.br/60PbV9F"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
+            className="btn-cta inline-block"
+          >
+            🌸 Quero acesso a todos os módulos
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );

@@ -102,10 +102,30 @@ export const SolutionSection = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           viewport={{ once: true }}
-          className="font-serif text-xl text-center text-foreground mt-8"
+          className="font-serif text-xl text-center text-foreground mt-8 mb-8"
         >
           Apenas clareza, acolhimento e transformação real.
         </motion.p>
+        
+        {/* CTA Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <motion.a
+            href="https://pay.kiwify.com.br/60PbV9F"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.98 }}
+            className="btn-cta inline-block"
+          >
+            🌸 Quero começar minha transformação
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );

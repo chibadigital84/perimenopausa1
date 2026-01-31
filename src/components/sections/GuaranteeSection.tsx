@@ -37,6 +37,18 @@ export const GuaranteeSection = () => {
             <p className="font-serif text-xl text-primary mt-4 italic">
               "Todo o risco é meu. A transformação é sua."
             </p>
+            
+            {/* CTA Button */}
+            <motion.a
+              href="https://pay.kiwify.com.br/60PbV9F"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="btn-cta inline-block mt-6"
+            >
+              🌸 Garantir minha vaga com segurança
+            </motion.a>
           </div>
         </motion.div>
       </div>
