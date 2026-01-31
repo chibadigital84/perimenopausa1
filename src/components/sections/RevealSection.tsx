@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import womanEmergingImage from '@/assets/woman-emerging-light.jpg';
+import portalImage from '@/assets/portal.jpg';
 
 export const RevealSection = () => {
   return (
@@ -26,7 +26,7 @@ export const RevealSection = () => {
           </p>
         </motion.div>
         
-        {/* Image */}
+        {/* Portal Image */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -34,11 +34,11 @@ export const RevealSection = () => {
           viewport={{ once: true }}
           className="flex justify-center mb-12"
         >
-          <div className="glow-soft rounded-full overflow-hidden w-64 h-64 md:w-80 md:h-80">
+          <div className="glow-soft rounded-3xl overflow-hidden max-w-2xl w-full">
             <img 
-              src={womanEmergingImage} 
-              alt="Mulher emergindo como luz" 
-              className="w-full h-full object-cover"
+              src={portalImage} 
+              alt="Mulher atravessando portal de flores" 
+              className="w-full h-auto object-cover"
             />
           </div>
         </motion.div>

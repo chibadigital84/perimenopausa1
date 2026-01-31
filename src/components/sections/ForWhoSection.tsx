@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Check, X } from 'lucide-react';
+import quebradaImage from '@/assets/quebrada.jpg';
 
 const notForYou = [
   'Você busca uma solução mágica que resolva tudo sem esforço',
@@ -18,8 +19,15 @@ const forYou = [
 
 export const ForWhoSection = () => {
   return (
-    <section className="section-padding bg-background">
-      <div className="container-wide">
+    <section className="relative section-padding overflow-hidden">
+      {/* Background image with overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{ backgroundImage: `url(${quebradaImage})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-lilac-soft/30" />
+      
+      <div className="container-wide relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +37,7 @@ export const ForWhoSection = () => {
         >
           <p className="font-script text-2xl text-primary mb-4">Seja honesta comigo (e com você)</p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground">
-            Este curso é para você?
+            Você se reconhece aqui?
           </h2>
         </motion.div>
         
@@ -40,7 +48,7 @@ export const ForWhoSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="card-spiritual bg-rose-soft/20 border border-rose/20"
+            className="card-spiritual bg-rose-soft/40 border border-rose/20 backdrop-blur-sm"
           >
             <h3 className="font-serif text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
               <X className="w-6 h-6 text-destructive" />
@@ -62,7 +70,7 @@ export const ForWhoSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="card-spiritual bg-lilac-soft/20 border border-primary/20"
+            className="card-spiritual bg-lilac-soft/40 border border-primary/20 backdrop-blur-sm"
           >
             <h3 className="font-serif text-xl font-semibold text-foreground mb-6 flex items-center gap-2">
               <Check className="w-6 h-6 text-primary" />
