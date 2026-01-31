@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { PlayCircle, BookOpen, Users } from 'lucide-react';
+import lotusHandsImage from '@/assets/lotus-hands.jpg';
 
 const features = [
   {
@@ -33,25 +34,45 @@ export const SolutionSection = () => {
           <p className="font-script text-2xl text-primary mb-4">A Solução</p>
         </motion.div>
         
-        {/* Main course card */}
+        {/* Main course card with image */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="card-price max-w-4xl mx-auto mb-12"
+          className="card-price max-w-5xl mx-auto mb-12"
         >
-          <div className="text-center">
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
-              PERIMENOPAUSA CONSCIENTE
-            </h2>
-            <p className="font-serif text-xl md:text-2xl text-primary mb-6">
-              A travessia psicoemocional e espiritual da mulher 40+
-            </p>
-            <p className="font-body text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Um curso online completo para você compreender o que está acontecendo com seu corpo, 
-              emoções e energia — e atravessar a perimenopausa com consciência, autonomia, leveza e conexão espiritual.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Image - lotus hands */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="order-2 lg:order-1"
+            >
+              <div className="rounded-2xl overflow-hidden glow-soft">
+                <img 
+                  src={lotusHandsImage} 
+                  alt="Mãos entregando flor de lótus"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </motion.div>
+            
+            {/* Content */}
+            <div className="text-center lg:text-left order-1 lg:order-2">
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
+                PERIMENOPAUSA CONSCIENTE
+              </h2>
+              <p className="font-serif text-xl md:text-2xl text-primary mb-6">
+                A travessia psicoemocional e espiritual da mulher 40+
+              </p>
+              <p className="font-body text-muted-foreground leading-relaxed">
+                Um curso online completo para você compreender o que está acontecendo com seu corpo, 
+                emoções e energia — e atravessar a perimenopausa com consciência, autonomia, leveza e conexão espiritual.
+              </p>
+            </div>
           </div>
           
           {/* Features grid */}
