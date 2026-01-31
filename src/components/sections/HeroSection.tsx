@@ -68,20 +68,17 @@ export const HeroSection = () => {
         </motion.div>
         
         {/* CTA Button */}
-        <motion.a href="#oferta" initial={{
-        opacity: 0,
-        y: 20
-      }} animate={{
-        opacity: 1,
-        y: 0
-      }} transition={{
-        duration: 0.8,
-        delay: 1
-      }} whileHover={{
-        scale: 1.05
-      }} whileTap={{
-        scale: 0.98
-      }} className="btn-cta cursor-pointer">
+        <motion.a 
+          href="https://pay.kiwify.com.br/60PbV9F"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, y: 20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, delay: 1 }} 
+          whileHover={{ scale: 1.05 }} 
+          whileTap={{ scale: 0.98 }} 
+          className="btn-cta cursor-pointer"
+        >
           🌸 Comece sua travessia agora
         </motion.a>
       </div>

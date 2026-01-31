@@ -105,7 +105,7 @@ export const RevealSection = () => {
             <br />Quando você se conecta com algo maior do que apenas sintomas físicos...
           </p>
           
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 mb-10">
             {['A ansiedade diminui.', 'A irritação dá lugar à clareza.', 'O caos interno se organiza.'].map((text, index) => (
               <motion.p
                 key={text}
@@ -119,6 +119,26 @@ export const RevealSection = () => {
               </motion.p>
             ))}
           </div>
+          
+          {/* CTA Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <motion.a
+              href="https://pay.kiwify.com.br/60PbV9F"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="btn-cta inline-block"
+            >
+              🌸 Quero atravessar consciente
+            </motion.a>
+          </motion.div>
         </motion.div>
       </div>
     </section>
