@@ -137,7 +137,7 @@ export const SolutionSection = () => {
           className="text-center"
         >
           <motion.a
-            href="https://pay.kiwify.com.br/60PbV9F"
+            href="https://pay.kiwify.com.br/KZs1cRv"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

@@ -144,7 +144,7 @@ export const PriceSection = () => {
             </div>
             
             {/* CTA Button */}
-            <motion.a href="https://pay.kiwify.com.br/60PbV9F" target="_blank" rel="noopener noreferrer" whileHover={{
+            <motion.a href="https://pay.kiwify.com.br/KZs1cRv" target="_blank" rel="noopener noreferrer" whileHover={{
             scale: 1.05
           }} whileTap={{
             scale: 0.98

@@ -64,7 +64,7 @@ export const HeroSection = () => {
         
         {/* CTA Button */}
         <motion.a
-          href="https://pay.kiwify.com.br/60PbV9F"
+          href="https://pay.kiwify.com.br/KZs1cRv"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 20 }}
