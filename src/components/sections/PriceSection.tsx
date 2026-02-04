@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Check, Clock, Sparkles, BookOpen, Gift, Infinity, RefreshCw, Lock, ShieldCheck } from 'lucide-react';
 const valueStack = [{
-  item: '8 Aulas Transformadoras',
+  item: '8 módulos Transformadores',
   value: 'R$ 792,00'
 }, {
   item: 'Bônus #1: Ebook',
