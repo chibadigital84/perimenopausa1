@@ -106,7 +106,7 @@ export const PriceSection = () => {
               Valor total do programa
             </p>
             <p className="font-serif text-2xl text-muted-foreground line-through mb-4">
-              R$ 297,00
+              R$ 990,80
             </p>
             
             <p className="font-body text-lg text-primary mb-2">
