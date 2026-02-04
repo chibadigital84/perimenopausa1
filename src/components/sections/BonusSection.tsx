@@ -4,7 +4,7 @@ import { BookOpen, Video, Infinity } from 'lucide-react';
 const bonuses = [
   {
     icon: BookOpen,
-    title: 'Ebook de Integração Profunda',
+    title: 'Material de apoio para aprofundar o aprendizado',
     description: 'Material de apoio ao conteúdo que será ministrado nas aulas.',
     value: 'R$ 49,90'
   },
