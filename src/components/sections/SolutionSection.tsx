@@ -5,7 +5,7 @@ import lotusHandsImage from '@/assets/lotus-hands.jpg';
 const features = [
   {
     icon: PlayCircle,
-    title: '8 Aulas em Vídeo',
+    title: '8 módulos em Vídeo',
     description: 'Conteúdo transformador para assistir no seu ritmo'
   },
   {
