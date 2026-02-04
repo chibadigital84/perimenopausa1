@@ -4,7 +4,7 @@ const valueStack = [{
   item: '8 módulos Transformadores',
   value: 'R$ 792,00'
 }, {
-  item: 'Bônus #1: Ebook',
+  item: 'Bônus #1: Material de suporte de todo o curso',
   value: 'R$ 49,90'
 }, {
   item: 'Bônus #2: Aula Especial',
