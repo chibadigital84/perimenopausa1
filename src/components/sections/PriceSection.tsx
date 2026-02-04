@@ -15,7 +15,7 @@ const valueStack = [{
 }];
 const benefits = [{
   icon: Sparkles,
-  text: 'Acesso imediato a todas as 8 aulas'
+  text: 'Acesso todos os módulos'
 }, {
   icon: BookOpen,
   text: 'Caderno de Práticas em PDF'
