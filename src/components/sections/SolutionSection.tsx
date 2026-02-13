@@ -10,8 +10,8 @@ const features = [
   },
   {
     icon: BookOpen,
-    title: 'Ebook de Integração',
-    description: 'Material de apoio para aprofundar o aprendizado'
+    title: 'Guia de Integração',
+    description: 'Material completo de apoio para aprofundar o aprendizado'
   },
   {
     icon: Users,

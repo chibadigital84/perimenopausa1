@@ -49,7 +49,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-serif text-3xl md:text-5xl lg:text-6xl text-center max-w-4xl leading-tight text-foreground mb-6 drop-shadow-sm"
         >
-          "Quanto mais você tenta se ajustar, mais você se afasta de quem realmente é."
+          Recupere o controle de sua vida, mesmo que você não entenda o que está acontecendo.
         </motion.h1>
         
         {/* Subheadline */}
@@ -59,7 +59,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-body text-lg md:text-xl text-foreground/80 text-center max-w-2xl mb-10 drop-shadow-sm"
         >
-          Existe um motivo lógico para isso — e um caminho simples para voltar ao centro, sem precisar virar outra pessoa.
+          Aprenda, em duas semanas, a regular emoções, reduzir o caos interno com consciência e autonomia, usando um método prático de integração com o corpo, psique e espiritualidade.
         </motion.p>
         
         {/* CTA Button */}

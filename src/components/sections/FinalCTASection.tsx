@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import rodaImage from '@/assets/roda.jpg';
+import mulheresImage from '@/assets/mulheres-diversas.png';
 
 export const FinalCTASection = () => {
   return (
@@ -96,8 +97,8 @@ export const FinalCTASection = () => {
           >
             <div className="rounded-3xl overflow-hidden glow-soft">
               <img 
-                src={rodaImage} 
-                alt="Círculo de mulheres em comunhão"
+                src={mulheresImage} 
+                alt="Diversidade de mulheres unidas"
                 className="w-full h-auto object-cover"
               />
             </div>
