@@ -47,9 +47,9 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-serif text-3xl md:text-5xl lg:text-6xl text-center max-w-4xl leading-tight text-foreground mb-6 drop-shadow-sm">
+          className="font-serif text-3xl md:text-5xl lg:text-6xl text-center max-w-4xl leading-tight text-foreground mb-6 drop-shadow-sm">Recupere o controle de sua vida, mesmo que você ainda não entenda o que está acontecendo.
 
-          Recupere o controle de sua vida, mesmo que você não entenda o que está acontecendo.
+
         </motion.h1>
         
         {/* Subheadline */}
