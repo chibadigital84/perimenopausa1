@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Check, Clock, Sparkles, BookOpen, Gift, Infinity, RefreshCw, Lock, ShieldCheck } from 'lucide-react';
+import { Check, Clock, Sparkles, Gift, Infinity, RefreshCw, Lock, ShieldCheck } from 'lucide-react';
 const valueStack = [{
   item: '8 módulos Transformadores',
   value: 'R$ 792,00'
@@ -16,9 +16,6 @@ const valueStack = [{
 const benefits = [{
   icon: Sparkles,
   text: 'Acesso todos os módulos'
-}, {
-  icon: BookOpen,
-  text: 'Caderno de Práticas em PDF'
 }, {
   icon: Gift,
   text: 'Aula Bônus exclusiva'
