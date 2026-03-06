@@ -38,7 +38,7 @@ const modules = [{
 }, {
   number: 8,
   icon: Crown,
-  title: 'A nova mulher que está nascendo',
+  title: 'Perimenopausa como Portal',
   topics: ['Integre tudo o que aprendeu', 'Defina quem você é agora e o que quer sustentar', 'Conquiste autonomia emocional, espiritual e corporal']
 }];
 export const ModulesSection = () => {
