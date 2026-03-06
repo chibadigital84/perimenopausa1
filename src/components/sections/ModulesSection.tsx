@@ -33,7 +33,7 @@ const modules = [{
 }, {
   number: 7,
   icon: Users,
-  title: 'Não atravessamos sozinhas',
+  title: 'A Verdade do Ser Mulher Emerge',
   topics: ['Por que o isolamento agrava sintomas emocionais', 'A importância das trocas femininas na maturidade', 'Como criar conexões autênticas']
 }, {
   number: 8,
