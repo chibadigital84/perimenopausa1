@@ -33,12 +33,12 @@ const modules = [{
 }, {
   number: 7,
   icon: Users,
-  title: 'Não atravessamos sozinhas',
+  title: 'A Verdade do Ser Mulher Emerge',
   topics: ['Por que o isolamento agrava sintomas emocionais', 'A importância das trocas femininas na maturidade', 'Como criar conexões autênticas']
 }, {
   number: 8,
   icon: Crown,
-  title: 'A nova mulher que está nascendo',
+  title: 'Perimenopausa como Portal',
   topics: ['Integre tudo o que aprendeu', 'Defina quem você é agora e o que quer sustentar', 'Conquiste autonomia emocional, espiritual e corporal']
 }];
 export const ModulesSection = () => {
