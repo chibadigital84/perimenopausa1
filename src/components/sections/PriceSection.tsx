@@ -115,7 +115,7 @@ export const PriceSection = () => {
                 R$ 67<span className="text-4xl">,00</span>
               </p>
               <p className="font-body text-xl text-muted-foreground mt-4">
-                ou <span className="text-foreground font-semibold">12x de R$ 10,03</span> no cartão
+                ou <span className="text-foreground font-semibold">12x de R$ 6,93</span> no cartão
               </p>
             </div>
             
