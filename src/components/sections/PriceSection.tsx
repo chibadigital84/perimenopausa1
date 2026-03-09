@@ -112,7 +112,7 @@ export const PriceSection = () => {
             
             <div className="my-6">
               <p className="font-serif text-6xl md:text-7xl lg:text-8xl font-bold text-gradient-spiritual">
-                R$ 97<span className="text-4xl">,00</span>
+                R$ 67<span className="text-4xl">,00</span>
               </p>
               <p className="font-body text-xl text-muted-foreground mt-4">
                 ou <span className="text-foreground font-semibold">12x de R$ 10,03</span> no cartão
