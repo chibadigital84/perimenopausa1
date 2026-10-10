@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef } from 'react';
 import HeroSection from '@/components/sections/HeroSection';
 import ProblemSection from '@/components/sections/ProblemSection';
 import RevealSection from '@/components/sections/RevealSection';
@@ -14,8 +15,18 @@ import FinalCTASection from '@/components/sections/FinalCTASection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  const pageRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    // UTMify's compatibility marker preserves native target="_blank" behavior
+    // while still recording InitiateCheckout instead of navigating the iframe.
+    pageRef.current?.querySelectorAll<HTMLAnchorElement>(
+      'a[href^="https://pay.kiwify.com.br/"]',
+    ).forEach((link) => link.classList.add('elementor-button'));
+  }, []);
+
   return (
-    <div className="min-h-screen bg-background">
+    <div ref={pageRef} className="min-h-screen bg-background">
       {/* 1. Hero Section */}
       <HeroSection />
       
