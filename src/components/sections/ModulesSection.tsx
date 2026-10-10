@@ -114,7 +114,7 @@ export const ModulesSection = () => {
       }} viewport={{
         once: true
       }} className="text-center mt-12">
-          <motion.a href="https://pay.kiwify.com.br/KZs1cRv" target="_blank" rel="noopener noreferrer" whileHover={{
+          <motion.a href="#oferta" whileHover={{
           scale: 1.05
         }} whileTap={{
           scale: 0.98

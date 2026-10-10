@@ -73,9 +73,7 @@ export const MentorSection = () => {
               
               {/* CTA Button */}
               <motion.a
-                href="https://pay.kiwify.com.br/KZs1cRv"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#oferta"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 className="btn-cta inline-block mt-6"

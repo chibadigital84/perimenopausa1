@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef, type MouseEvent } from 'react';
 import HeroSection from '@/components/sections/HeroSection';
 import ProblemSection from '@/components/sections/ProblemSection';
 import RevealSection from '@/components/sections/RevealSection';
@@ -17,6 +17,19 @@ import Footer from '@/components/Footer';
 const Index = () => {
   const pageRef = useRef<HTMLDivElement>(null);
 
+  const handleOfferNavigation = (event: MouseEvent<HTMLDivElement>) => {
+    if (!(event.target instanceof Element)) return;
+    const link = event.target.closest('a[href="#oferta"]');
+    const offer = pageRef.current?.querySelector('#oferta');
+    if (!link || !offer) return;
+    event.preventDefault();
+    event.stopPropagation();
+    offer.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+      block: 'start',
+    });
+  };
+
   useLayoutEffect(() => {
     // UTMify's compatibility marker preserves native target="_blank" behavior
     // while still recording InitiateCheckout instead of navigating the iframe.
@@ -26,7 +39,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div ref={pageRef} className="min-h-screen bg-background">
+    <div ref={pageRef} onClickCapture={handleOfferNavigation} className="min-h-screen bg-background">
       {/* 1. Hero Section */}
       <HeroSection />
       
